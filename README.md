@@ -17,14 +17,17 @@ App em React que consome a **API pública do TMDB** (The Movie Database) para bu
 3. Copie o arquivo `.env.example` para `.env`
 4. Cole o token na variável `VITE_TMDB_TOKEN`
 
-##  Como rodar
+## 🔗 Demo
 
-```bash
-npm install
-npm run dev
-```
+Veja o projeto funcionando: [movie-explorer2-seven.vercel.app](https://movie-explorer2-seven.vercel.app/)
 
-Acesse `https://movie-explorer2-seven.vercel.app/`.
+## Como rodar localmente
+
+1. Clone o repositório
+2. Rode `npm install`
+3. Configure o `.env` com seu token da TMDB (veja `.env.example`)
+4. Rode `npm run dev`
+5. Acesse http://localhost:5173 no navegador
 
 ##  Tecnologias
 
