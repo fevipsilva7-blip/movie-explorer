@@ -1,8 +1,8 @@
-# 🎬 Movie Explorer
+#  Movie Explorer
 
 App em React que consome a **API pública do TMDB** (The Movie Database) para buscar filmes e ver detalhes: sinopse, gêneros, duração e nota.
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Lista de filmes em alta na semana (carregada automaticamente)
 - Busca por título com debounce (não dispara uma requisição a cada tecla)
@@ -10,14 +10,14 @@ App em React que consome a **API pública do TMDB** (The Movie Database) para bu
 - Estados de carregamento, erro e "nenhum resultado"
 - Tratamento de erro se o token da API não estiver configurado
 
-## 🔑 Configurando a API (obrigatório)
+##  Configurando a API (obrigatório)
 
 1. Crie uma conta gratuita em [themoviedb.org/signup](https://www.themoviedb.org/signup)
 2. Vá em **Configurações → API** e copie o **"API Read Access Token"** (token v4, começa com `eyJ...`)
 3. Copie o arquivo `.env.example` para `.env`
 4. Cole o token na variável `VITE_TMDB_TOKEN`
 
-## 🚀 Como rodar
+##  Como rodar
 
 ```bash
 npm install
@@ -26,14 +26,14 @@ npm run dev
 
 Acesse `http://localhost:5173`.
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - React 18 (hooks: `useState`, `useEffect`, hook customizado `useDebounce`)
 - Vite
 - Fetch API + variáveis de ambiente (`import.meta.env`)
 - TMDB API v3
 
-## 📂 Estrutura
+##  Estrutura
 
 ```
 movie-explorer/
