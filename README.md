@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Acesse `http://localhost:5173`.
+Acesse `https://movie-explorer2-seven.vercel.app/`.
 
 ##  Tecnologias
 
