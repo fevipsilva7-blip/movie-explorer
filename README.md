@@ -1,8 +1,10 @@
-#  Movie Explorer
+# Movie Explorer
+
+[![Demo](https://img.shields.io/badge/DEMO-ff00c8?style=for-the-badge&logo=vercel&logoColor=white)](https://movie-explorer2-seven.vercel.app/)
 
 App em React que consome a **API pública do TMDB** (The Movie Database) para buscar filmes e ver detalhes: sinopse, gêneros, duração e nota.
 
-##  Funcionalidades
+## Funcionalidades
 
 - Lista de filmes em alta na semana (carregada automaticamente)
 - Busca por título com debounce (não dispara uma requisição a cada tecla)
@@ -10,16 +12,14 @@ App em React que consome a **API pública do TMDB** (The Movie Database) para bu
 - Estados de carregamento, erro e "nenhum resultado"
 - Tratamento de erro se o token da API não estiver configurado
 
-##  Configurando a API (obrigatório)
+## Configurando a API (obrigatório)
 
 1. Crie uma conta gratuita em [themoviedb.org/signup](https://www.themoviedb.org/signup)
 2. Vá em **Configurações → API** e copie o **"API Read Access Token"** (token v4, começa com `eyJ...`)
 3. Copie o arquivo `.env.example` para `.env`
 4. Cole o token na variável `VITE_TMDB_TOKEN`
 
-## 🔗 Demo
-
-Veja o projeto funcionando: [movie-explorer2-seven.vercel.app](https://movie-explorer2-seven.vercel.app/)
+> **Observação:** como o app roda inteiro no navegador (sem back-end), o token de leitura do TMDB fica visível no código enviado ao navegador. Ele só permite consultar dados públicos, mas, por isso, use um token criado só para este projeto. Uma evolução possível é colocar uma função serverless entre o app e a API para esconder o token.
 
 ## Como rodar localmente
 
@@ -29,14 +29,14 @@ Veja o projeto funcionando: [movie-explorer2-seven.vercel.app](https://movie-exp
 4. Rode `npm run dev`
 5. Acesse http://localhost:5173 no navegador
 
-##  Tecnologias
+## Tecnologias
 
 - React 18 (hooks: `useState`, `useEffect`, hook customizado `useDebounce`)
 - Vite
 - Fetch API + variáveis de ambiente (`import.meta.env`)
 - TMDB API v3
 
-##  Estrutura
+## Estrutura
 
 ```
 movie-explorer/
@@ -59,7 +59,7 @@ movie-explorer/
 └── vite.config.js
 ```
 
-## 💡 Próximos passos
+## Próximos passos
 
 - Paginação nos resultados de busca
 - Filtro por gênero
